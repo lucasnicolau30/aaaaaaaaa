@@ -7,12 +7,12 @@ Resumo dos tipos de isolamento em arquitetura multi-tenant.
 A **Company** representa o tenant (organização/cliente), e o **User** representa o usuário que pertence a um tenant. Os diagramas abaixo ilustram a estrutura de cada entidade e como o relacionamento entre elas é estabelecido — geralmente via uma `ForeignKey` do User para a Company, garantindo que cada usuário esteja vinculado a um único tenant.
 
 <figure style="max-width:800px;margin:0.5rem auto;">
-  <img src="./django_multi-tenant_venv_docker_react_estudos/multi-tenant/imagens/modelagem-company.png" alt="Modelagem Company" style="max-width:800px;width:100%;height:auto;display:block;" />
+  <img src="./django_multi-tenant_venv_docker_estudos/multi-tenant/imagens/modelagem-company.png" alt="Modelagem Company" style="max-width:800px;width:100%;height:auto;display:block;" />
   <figcaption style="text-align:center;font-size:0.9em;color:#555;">Modelagem — Company (tenant)</figcaption>
 </figure>
 
 <figure style="max-width:800px;margin:0.5rem auto;">
-  <img src="./django_multi-tenant_venv_docker_react_estudos/multi-tenant/imagens/modelagem-user.png" alt="Modelagem User" style="max-width:800px;width:100%;height:auto;display:block;" />
+  <img src="./django_multi-tenant_venv_docker_estudos/multi-tenant/imagens/modelagem-user.png" alt="Modelagem User" style="max-width:800px;width:100%;height:auto;display:block;" />
   <figcaption style="text-align:center;font-size:0.9em;color:#555;">Modelagem — User</figcaption>
 </figure>
 
@@ -21,7 +21,7 @@ A **Company** representa o tenant (organização/cliente), e o **User** represen
 - Múltiplos tenants compartilham a mesma instância da aplicação, mas possuem bancos separados.
 
 <figure style="max-width:800px;margin:0.5rem auto;">
-	<img src="./django_multi-tenant_venv_docker_react_estudos/multi-tenant/imagens/multi-tenant-db-isolado.png" alt="Multi-tenant (BD isolado)" style="max-width:800px;width:100%;height:auto;display:block;" />
+	<img src="./django_multi-tenant_venv_docker_estudos/multi-tenant/imagens/multi-tenant-db-isolado.png" alt="Multi-tenant (BD isolado)" style="max-width:800px;width:100%;height:auto;display:block;" />
 	<figcaption style="text-align:center;font-size:0.9em;color:#555;">Esquema — BD isolado</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ A **Company** representa o tenant (organização/cliente), e o **User** represen
 - Múltiplos tenants compartilham a mesma instância da aplicação e o mesmo banco de dados, mas com esquemas diferentes.
 
 <figure style="max-width:800px;margin:0.5rem auto;">
-	<img src="./django_multi-tenant_venv_docker_react_estudos/multi-tenant/imagens/multi-tenant-schema-isolado.png" alt="Multi-tenant (Schema isolado)" style="max-width:800px;width:100%;height:auto;display:block;" />
+	<img src="./django_multi-tenant_venv_docker_estudos/multi-tenant/imagens/multi-tenant-schema-isolado.png" alt="Multi-tenant (Schema isolado)" style="max-width:800px;width:100%;height:auto;display:block;" />
 	<figcaption style="text-align:center;font-size:0.9em;color:#555;">Esquema — Schema isolado</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ A **Company** representa o tenant (organização/cliente), e o **User** represen
 - Múltiplos tenants compartilham a mesma instância da aplicação e o mesmo banco de dados, mas com tabelas diferentes.
 
 <figure style="max-width:800px;margin:0.5rem auto;">
-	<img src="./django_multi-tenant_venv_docker_react_estudos/multi-tenant/imagens/multi-tenant-tabela-isolada.png" alt="Multi-tenant (Tabelas isoladas)" style="max-width:800px;width:100%;height:auto;display:block;" />
+	<img src="./django_multi-tenant_venv_docker_estudos/multi-tenant/imagens/multi-tenant-tabela-isolada.png" alt="Multi-tenant (Tabelas isoladas)" style="max-width:800px;width:100%;height:auto;display:block;" />
 	<figcaption style="text-align:center;font-size:0.9em;color:#555;">Esquema — Tabelas isoladas</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ CMD ["node", "server.js"]
 ```
 
 <figure style="max-width:800px;margin:0.5rem auto;">
-  <img src="./django_multi-tenant_venv_docker_react_estudos/docker/imagens/camadas-imagem-docker.png" alt="Camadas da imagem Docker" style="max-width:800px;width:100%;height:auto;
+  <img src="./django_multi-tenant_venv_docker_estudos/docker/imagens/camadas-imagem-docker.png" alt="Camadas da imagem Docker" style="max-width:800px;width:100%;height:auto;
   display:block;" />
   <figcaption style="text-align:center;font-size:0.9em;color:#555;">Camadas da imagem</figcaption>
 </figure>
